@@ -1,0 +1,142 @@
+/********** nav start **********/
+#nav{
+	height: 192px; 
+	background: url(../images/bg2.jpg) no-repeat;
+	background-size: cover;
+}
+/********** nav end **********/
+/********** single start **********/
+#single{
+	padding: 80px 0;
+}
+#single p{
+	color: #555;
+    font-size: 15px;
+    line-height: 28px;
+    margin: 16px 0;
+}
+#single a{
+	color: #555;
+}
+#single .comment-list{
+	border: 1px solid #E6E6E6;
+    padding: 32px;
+    margin: 48px 0;
+}
+#single .comment-list1{
+	height: 107px;
+}
+#single .comment-list h5{
+	line-height: 19px;
+    font-size: 19px;
+    /*text-transform: none;*/
+    color: #999;
+}
+#single .comment-list-content img{
+	float: left;
+    width: 10%;
+    margin-right: 20px;
+}
+#single .comment-area{
+	margin-top: 80px;
+}
+#single .comment-area h3{
+	font-size: 32px;
+	color: #555;
+	margin-bottom: 8px;
+}
+#single .comment-area p{
+	padding: 8px 0;
+	position: relative;
+}
+#single .comment-area label{
+	color: #999;
+	font-weight: 300;
+	margin-bottom: 5px;
+	display: block;
+}
+#single .comment-area span{
+	color: #e4411b;
+	position: absolute;
+	left: 4px;
+	top: 45px;
+	font-size: 32px;
+}
+#single .comment-area input[type="text"]{
+	padding: 15px 20px;
+    width: 75%;
+    color: #999;
+    font-size: 13px;
+    border: none;
+    background: #fff;
+}
+#single .comment-area input[type="button"]{
+	padding: 15px 20px;
+    color: #fff;
+    background: #02D7FD;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+#single .comment-area input[type="button"]:hover{
+	background-color: #000;
+}
+#single .comment-area textarea{
+	padding: 15px 30px;
+    width: 90%;
+    color: #999;
+    font-size: 13px;
+    height: 200px;
+    border: none;
+    background: #fff;
+}
+#single .comment{
+	font-size: 16px;
+}
+#single .comment li{
+	border: 1px solid #e7e7e7;
+	padding: 10px;
+}
+#single .comment p{
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#single .comment a{
+	float: left;
+}
+#single .comment span{
+	float: right;
+}
+/********** single end **********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

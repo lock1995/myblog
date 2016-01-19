@@ -1,0 +1,502 @@
+/********** header start **********/
+#header{
+	background: url(../images/bg2.jpg) no-repeat;
+	min-height: 880px;
+	background-size: cover;
+}
+#banner{
+	display: block;
+	text-align: center;
+}
+#banner .head-photo{
+	margin-bottom: 10px;
+}
+#banner h1{
+	color: #fff;
+	font-family: 'Cookie', cursive;
+	font-size: 4em;
+}
+#banner p{
+	color: #fff;
+	font-size: 1.6em;
+	font-weight: 100;
+}
+#banner ul{
+	height: 100px;
+	line-height: 100px;
+}
+#banner ul li{
+	/*display: inline-block;*/
+/*	position: absolute;
+	left: 50%;*/
+	float: left;
+	text-align: center;
+	margin: 10px;
+}
+#banner li a{
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 0.55em 1.5em;
+	border-radius: 0.5em;
+	background: #5eb8d0;
+/*    background: linear-gradient(45deg, #74a89b 0%,#5eb8d0 50%,#d9c950 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74a89b', endColorstr='#d9c950',GradientType=1 );*/
+}
+#banner li a:hover{
+	background-color: #d9c950;
+}
+#banner .banner-button{
+	width: 330px;
+	position: absolute;
+	left: 50%;
+	margin-left: -165px;
+}
+/********** header end **********/
+/********** aboutme start **********/
+#aboutme{
+	min-height: 550px;
+	margin-bottom: 50px;
+}
+#aboutme h1{
+	text-align: center;
+	margin-top: 50px;
+}
+#aboutme .aboutme-box{
+	width: 1170px;
+	margin: 50px auto;
+}
+#aboutme .aboutme-text{
+	width: 50%;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#aboutme .aboutme-text h2{
+    font-weight: 700;
+    color: #595959;
+    font-size: 1.5em;
+}
+#aboutme .aboutme-text h3{
+	margin: 0.5em 0;
+    font-weight: 600;
+    color: #595959;
+    font-size: 1em;
+}
+#aboutme .aboutme-text p{
+	color: #7c7c7c;
+    font-size: 0.9em;
+    line-height: 1.9em;
+    margin-top: 1em;
+}
+#aboutme .aboutme-pic{
+	float: right;
+}
+#aboutme .aboutme-pic img{
+	width: 540px;
+	height: 402px;
+}
+/********** aboutme end **********/
+/********** service start **********/
+#service{
+	min-height: 800px;
+	width: 100%;
+	background: url(../images/services-bg.jpg) no-repeat 50% 50%;
+	min-height: 750px;
+	background-size: cover;
+}
+#service h1{
+	text-align: center;
+	padding-top: 50px;
+	color: #fff;
+}
+#service .container{
+	width: 1140px;
+	margin: 0 auto;
+	padding-top: 80px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+#service .servicex{
+	/*width: 33.33333333333%;*/
+	width: 350px;
+	display: block;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	margin-bottom: 80px;
+}
+#service .servicex span{
+    width: 48px;
+    height: 42px;
+    display: inline-block;
+    background: url(../images/services-icons.png) no-repeat;
+}
+#service .servicex h3{
+    color: #878a8e;
+    font-weight: 700;
+    padding: 0.5em 0;
+    font-size: 24px;
+}
+#service .servicex p{
+	color: #878a8e;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+#service .service2 span{
+	background-position: -55px 0;
+}
+#service .service3 span{
+	background-position: -120px 0;
+}
+#service .service4 span{
+	background-position: -177px 0;
+}
+#service .service5 span{
+	background-position: -238px 0;
+}
+#service .service6 span{
+	background-position: -297px 0;
+}
+/********** service end **********/
+/********** portfolio start **********/
+/*#portfolio{
+	min-height: 650px;
+}
+#portfolio .container{
+	width: 1140px;
+	margin: 0 auto;
+	padding-top: 60px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+#portfolio h1{
+    font-weight: 900;
+    color: #595959;
+    font-size: 2.3em;
+    padding: 0 0 0.4em;
+}
+#portfolio .photo-wall{
+	margin-top: 60px;
+}
+#portfolio .container .view{
+	float: left;
+	width: 285px;
+	height: 210px;
+	width: 25%;
+	position: relative;
+	overflow: hidden;
+}
+#portfolio .view img{
+	width: 100%;
+	height: 100%;
+}
+#portfolio .view .mask{
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background: rgba(31, 37, 44, 0.84);
+    opacity: 0;
+    display: none;
+}
+#portfolio .mask .info{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 2em;
+    color: #fff;
+}
+#portfolio .mask h3{
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.5em;
+}
+#portfolio .mask p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+}*/
+/*#portfolio .view:hover .mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+*/
+#portfolio h1{
+	text-align: center;
+	margin-top: 50px;
+}
+#portfolio .portfolio-list{
+	width: 1140px;
+	height: 360px;
+	margin: 50px auto;
+}
+#portfolio .portfolio-list li{
+	width: 285px;
+	height: 180px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+#portfolio .portfolio-list img{
+	width: 100%;
+	height: 100%;
+}
+#portfolio .portfolio-list .mask{
+	width: 285px;
+	height: 180px;
+	background: rgb(31,37,44);
+	opacity: 0;
+	filter: alpha(opacity=0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	text-align: center;
+}
+#portfolio .mask img{
+	width: 60px;
+	height: 60px;
+	margin-top: 30px;
+}
+#portfolio .mask h3{
+    color: #fff;
+    font-weight: 200;
+    font-size: 24px;
+}
+#portfolio .mask p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+/********** portfolio end **********/
+/********** myblog start **********/
+/*#blog .loading{
+	width: 100%;
+	height: 50px;
+	background: #ccc;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	position: fixed;
+	bottom: 0;
+	display: none;
+}*/
+#blog{
+	/*min-height: 2000px;*/
+	text-align: center;
+}
+#blog .section{
+	margin-bottom: 50px;
+}
+#blog h1{
+    font-weight: 900;
+    color: #595959;
+    font-size: 2.3em;
+    padding: 0 0 0.4em;
+}
+#blog .blog-box{
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+#blog .col{
+	float: left;
+	width: 30%;
+	margin-right: 3%;
+}
+#blog .col li{
+	background: #fff;
+	padding: 16px;
+	border: 1px ridge #fff;
+	margin-bottom: 32px;
+	box-shadow: 0px 0px 4px #eee;
+    -webkit-box-shadow: 0px 0px 4px #eee;
+    -moz-box-shadow: 0px 0px 4px #eee;
+    -o-box-shadow: 0px 0px 4px #eee;
+    -ms-box-shadow: 0px 0px 4px #eee;
+}
+#blog .col img{
+	width: 100%;
+	/*height: 172px;*/
+}
+#blog .col h3{
+	margin-top: 8px;
+	font-size: 20px;
+}
+#blog .col h3 a{
+	font-weight: 700;
+}
+#blog .col a:hover{
+	color: #88ccd8;
+}
+#blog .col h5{
+	color: #7c7c7c;
+    font-weight: 700;
+    font-size: 0.85em;
+    margin: 0.4em 0 0.5em;
+}
+#blog .col p{
+    color: #595959;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+#blog .col .button{
+	background: #64c9db;
+    padding: 0.8em 1.5em;
+    font-weight: 600;
+    color: #FFF;
+    float: right;
+    margin-top: 30px;
+}
+#blog .check-out{
+	color: #515151;
+	font-weight: 300;
+	font-size: 29px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+#blog .check-out a{
+	color: #64c9db;
+	font-weight: 700;
+}
+#blog .check-out a:hover{
+	color: #515151;
+}
+/********** myblog end **********/
+/********** project start **********/
+#project{
+	/*min-height: 500px;*/
+	background: url(../images/projects-bg.jpg) no-repeat 0px 0px;
+	background-size: cover;
+	padding-top: 170px;
+	padding-bottom: 170px;
+/*	margin: 0 auto;
+	width: 1400px;*/
+}
+#project .cycle{
+	text-align: center;
+}
+#project .cycle span{
+    width: 317px;
+    height: 317px;
+    display: inline-block;
+    background: url(../images/project.png) no-repeat 0px 0px;
+}
+#project .project-box{
+	position: relative;
+}
+#project p{
+	color: #fff;
+	font-weight: 300;
+	font-size: 28px;
+	padding: 5px;
+}
+#project .project1{
+	position: absolute;
+	top: -26%;
+	left: 45%;
+	text-align: center;
+}
+#project .project2{
+	position: absolute;
+	top: 70%;
+	left: 30%;
+	text-align: center;
+}
+#project .project3{
+	position: absolute;
+	top: 70%;
+	left: 60%;
+	text-align: center;
+}
+/********** project end **********/
+/********** contact start **********/
+#contact{
+	padding: 20px 0;
+	text-align: center;
+}
+#contact p{
+	color: #595959;
+	font-size: 25px;
+	font-weight: 400;
+    padding: 11px 19px;
+}
+#contact a{
+    background: #5dbed2;
+    padding: 11px 19px;
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-left: 16px;
+}
+/********** contact end **********/
+/*#overlay{
+	display: none;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=63)";
+    filter: alpha(opacity=63);
+    opacity: 0.63;
+	background: rgb(0, 0, 0);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+}
+#overlay-img{
+	display: none;
+	z-index: 1001;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+    height: 208px;
+    width: 331px;
+    margin-left: -165.5px;
+    margin-top: -104px;
+}
+#overlay-img .close{
+	background: url(../images/close.gif) no-repeat;
+	width: 25px;
+	height: 25px;
+	z-index: 1002;
+	cursor: pointer;
+	margin: 16px;
+	position: absolute;
+}
+#overlay-img .description{
+    height: 26px;
+    width: 100%;
+    color: #505050;
+    font-family: Tahoma;
+    clear: both;
+    position: relative;
+    font-size: 12px;
+    margin-top: -5px;
+}
+#overlay-img .description .description-name{
+	float: left;
+    padding: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+#overlay-img .description .description-via{
+	float: right;
+    padding: 5px;
+    color: #fff;
+    font-size: 16px;
+}*/
