@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Amaze UI Admin table Examples</title>
+  <title>评论管理</title>
   <meta name="description" content="这是一个 table 页面">
   <meta name="keywords" content="table">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -39,8 +39,8 @@
       <div class="am-u-sm-12 am-u-md-6">
         <div class="am-btn-toolbar">
           <div class="am-btn-group am-btn-group-xs">
-            <button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span> 新增</button>
-            <button type="button" class="am-btn am-btn-default"><span class="am-icon-trash-o"></span> 删除</button>
+            <button type="button" class="am-btn am-btn-default btn-add"><span class="am-icon-plus"></span> 新增</button>
+            <button type="button" class="am-btn am-btn-default btn-del"><span class="am-icon-trash-o"></span> 删除</button>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@
           <table class="am-table am-table-striped am-table-hover table-main">
             <thead>
               <tr>
-                <th class="table-check"><input type="checkbox" /></th>
+                <th class="table-check"><input type="checkbox" class="check-all"/></th>
                 <th class="table-id">时间</th>
                 <th class="table-title">用户名</th>
                 <th class="table-type">内容</th>
@@ -63,7 +63,7 @@
             foreach($comments as $comment){
           ?>
               <tr>
-                <td><input type="checkbox" /></td>
+                <td><input type="checkbox" value="<?php echo $comment -> comm_id; ?>" class="checkbox" name="items"/></td>
                 <td><?php echo $comment -> add_time; ?></td>
                 <td><a href="#"><?php echo $comment -> comm_name; ?></a></td>
                 <td><?php echo $comment -> subject; ?></td>
@@ -81,6 +81,23 @@
           ?>
           </tbody>
         </table>
+
+        <div class="am-cf">
+          共 <?php echo $total_rows; ?> 条记录
+          <div class="am-fr">
+            <ul class="am-pagination">
+              <!-- <li class="am-disabled"><a href="#">«</a></li>
+              <li class="am-active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">»</a></li> -->
+              <?php echo $this->pagination->create_links(); ?>
+            </ul>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -109,11 +126,42 @@
 <script>
 
  $(function(){
-   $('.am-btn').on('click', function(){
+   $('.am-hide-sm-only').on('click', function(){
      var commentId =  $(this).data('id');
      if(confirm('确定是否删除记录，不可恢复!?')){
        location.href = 'admin/delete_comm?comm_id='+commentId;
      }
+   });
+   $('input[type=checkbox][name=items]').click(function(){
+         var flag=true;
+               $('input[type=checkbox][name=items]').each(function(){
+          if(!this.checked){
+             flag = false;
+          }
+         });
+
+         if( flag ){
+           $('.check-all').prop('checked', true );
+         }else{
+           $('.check-all').prop('checked', false );
+         }
+   });
+   $('.check-all').on('click',function(){
+    if (this.checked) {
+       $('input[type=checkbox][name=items]').prop("checked", true );
+    }else{                
+         $('input[type=checkbox][name=items]').prop("checked", false );
+    };
+  });
+   $('.btn-del').on('click',function(){
+    var str = '';
+    $('[name=items]:checkbox:checked').each(function(){
+    str+=$(this).val()+",";
+    });
+    str = str.substring(0,str.length - 1);
+    if(confirm('确定是否删除记录，不可恢复!?')){
+       location.href = 'admin/delete_comms?comm_ids='+str;
+    }
    });
  });
 </script>

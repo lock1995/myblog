@@ -172,7 +172,7 @@
   });
 
   $plusButton.on('click',function(){
-    location.href = 'upload';
+    location.href = 'admin/add_blog_view';
   });
  });
 

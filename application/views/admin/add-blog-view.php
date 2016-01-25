@@ -16,6 +16,7 @@
   <meta name="apple-mobile-web-app-title" content="Amaze UI" />
   <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
   <link rel="stylesheet" href="assets/css/admin.css">
+  <link rel="stylesheet" href="kindeditor/themes/default/default.css">
   <style>
     .top{
       text-align: center;
@@ -23,7 +24,7 @@
       font-weight: bold;
     }
     .box{
-      margin-top: 100px;
+      margin-top: 50px;
       margin-left: 500px;
       height: 500px;
       width: 500px;
@@ -40,7 +41,7 @@
     .content{
       border: 0;
       padding: 10px;
-      width: 85%;
+      width: 100%;
       background: #fff;
       border: 1px solid #eee;
       color: #9198A3;
@@ -76,12 +77,11 @@
   <?php include 'admin-sidebar.php'; ?>
   <p class="top">新增文章</p>
   <div class="box">
-    <form action="admin/add_blog" method="post">
-      <!-- <p>标题： </p><input type="text" value="" name="title" class="title">
-      <p>内容： </p><textarea name="content" cols="30" rows="10" class="content"></textarea> -->
-      <!-- <p>图片： </p><input type="file" name="img" class="img"> -->
-      <!-- <p>图片： </p><input type="button" value="上传图片" class="upload"> -->
-      <!-- <div><input type="submit" class="submit" value="提 交"></div> -->
+    <form action="admin/add_blog" method="post" enctype="multipart/form-data">
+      <p>标题： </p><input type="text" value="" name="title" class="title">
+      <p>内容： </p><textarea name="content" cols="30" rows="10" class="content"></textarea>
+      <p>图片： </p><input type="file" name="img" class="img">
+      <div><input type="submit" class="submit" value="提 交"></div>
     </form>
   </div>
 </div>
@@ -104,12 +104,13 @@
 <!--<![endif]-->
 <script src="assets/js/amazeui.min.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="kindeditor/kindeditor-min.js"></script>
 <script>
-  // var $upload = $('.upload');
-  // $upload.on('click',function(){
-  //   location.href = 'admin/upload';
-  // });
-
+  KindEditor.ready(function(K) {
+    K.create('textarea[name="content"]', {
+      allowFileManager : true
+    });
+  });
 </script>
 
 </body>

@@ -15,11 +15,14 @@ class Admin_model extends CI_Model {
         return $this -> db -> get('t_admin') -> result();
     }
 
-    public function get_comm_by_blog_id(){
+    public function get_comm_by_blog_id($limit, $offset){
         // $data = array(
         //     'blog_id' => $blog_id
         // );
+        $this -> db -> order_by('add_time', 'desc');
+        $this -> db -> limit($limit, $offset);
         return $this -> db -> get('t_comment') -> result();
+        // return $this -> db -> get() -> result();
     }
 
     public  function save($admin_name, $admin_pwd){
@@ -42,11 +45,16 @@ class Admin_model extends CI_Model {
         $this -> db -> delete('t_comment', array('comm_id' => $comm_id));
     }
 
+    public  function delete_comms($comm_ids){
+        $this -> db ->query("delete from t_comment where comm_id in ($comm_ids)");
+    }
+
     public  function delete_msg($msg_id){
         $this -> db -> delete('t_message', array('message_id' => $msg_id));
     }
 
     public function get_all_blog(){
+        $this -> db -> order_by('add_time','desc');
         return $this -> db -> get('t_blog') -> result();
     }
 
@@ -83,13 +91,19 @@ class Admin_model extends CI_Model {
         $this -> db -> update('t_blog',$data);
     }
 
-    public function add_blog($title,$content,$admin_id){
+    public function add_blog($title,$content,$photo_url,$admin_id){
         $data = array(
             'title' => $title,
             'content' => $content,
-            'author' => $admin_id
+            'author' => $admin_id,
+            'blog_img' => $photo_url
         );
         $this -> db -> insert('t_blog',$data);
+        return $this -> db -> affected_rows();
+    }
+
+    public function get_comm_count(){
+        return $this -> db -> count_all('t_comment');
     }
 }
 

@@ -212,7 +212,7 @@ require(['jquery','lightbox','toTop'], function($, lb, tt){
 									var blog = res.data[i];
 									var html = '<li class="blog-artical">'
 													+ '<div class="blog-artical-pic">'
-														+ '<a href="welcome/single?blog_id='+blog.blog_id+'"><img src="'+blog.blog_img+'" title="name" /></a>'
+														+ '<a href="welcome/single?blog_id='+blog.blog_id+'"><img src="'+blog.blog_img+'" title="img" /></a>'
 													+ '</div>'
 													+ '<div class="blog-artical-info">'
 														+ '<h3><a href="#">'+blog.title+'</a></h3>'
