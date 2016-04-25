@@ -53,10 +53,10 @@
 				</ul>
 			</div>
 			<div class="comment-area">
-				<h3>ADD NEW COMMENT</h3>
+				<h3>添加评论</h3>
 				<!-- <form action="welcome/comment?blog_id=<?php echo $blogs[0] -> blog_id;?>" method="post"> -->
 					<p>
-						<label>Name</label>
+						<label>名字</label>
 						<span>*</span>
 						<input type="text" name="commname">
 					</p>
@@ -66,17 +66,17 @@
 						<input type="text" name="email">
 					</p>
 					<p>
-						<label>Website</label>
+						<label>网站</label>
 						<span></span>
 						<input type="text" name="website">
 					</p>
 					<p>
-						<label>Subject</label>
+						<label>内容</label>
 						<span>*</span>
 						<textarea name="subject" cols="30" rows="10"></textarea>
 					</p>
 					<p>
-						<input type="button" value="SUBMIT COMMENT" id="submit" data-id="<?php echo $blogs[0] -> blog_id;?>">
+						<input type="button" value="提交评论" id="submit" data-id="<?php echo $blogs[0] -> blog_id;?>">
 					</p>
 				<!-- </form> -->
 			</div>
@@ -84,7 +84,7 @@
 	</div>
 	<div id="footer">
 		<div class="container">
-			<div class="footer-left">Template by W3layouts</div>
+			<div class="footer-left">Temporary by Lock</div>
 			<div class="footer-right">
 				<ul>
 					<li><a href="#"><span class="face"></span></a></li>

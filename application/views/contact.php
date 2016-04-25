@@ -35,7 +35,7 @@
 			<div class="contact-left">
 				<!-- <form action="welcome/message" method="post"> -->
 					<div class="name info">
-						<p>YOUR NAME:</p>
+						<p>名字:</p>
 						<input type="text" name="username" class="textbox"  >
 					</div>
 					<div class="email info">
@@ -43,24 +43,24 @@
 						<input type="text" name="email" class="textbox"  >
 					</div>
 					<div class="message info">
-						<p>MESSAGE:</p>
+						<p>内容:</p>
 						<textarea name="content" id="message" cols="30" rows="10" ></textarea>
 					</div>
-					<input type="button" value="submit" id="sub">
+					<input type="button" value="提交" id="sub">
 				<!-- </form> -->
 			</div>
 			<div class="contact-right">
-				<h3>ADDRESS</h3>
-				<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non</p>
-				<p>1-25-2568-897</p>
-				<p><a href="#">mail@portfolio.com</a></p>
+				<h3>通讯地址</h3>
+				<p>黑龙江省哈尔滨市香坊区林园路4号<br/>哈尔滨理工大学南校区</p>
+				<p>＋86 13029853510</p>
+				<p><a href="#">liubingnan.ok@163.com</a></p>
 			</div>
 			<div class="map"></div>
 		</div>
 	</div>
 	<div id="footer">
 		<div class="container">
-			<div class="footer-left">Template by W3layouts</div>
+			<div class="footer-left">Temporary by Lock</div>
 			<div class="footer-right">
 				<ul>
 					<li><a href="#"><span class="face"></span></a></li>

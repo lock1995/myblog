@@ -35,8 +35,8 @@
 		</div>
 		<div id="banner">
 			<img src="images/pic.png" alt="photo" class="head-photo">
-			<h1>Videntur Parum</h1>
-			<p>Love to Design and capture Photographs :)</p>
+			<h1>刘炳男</h1>
+			<p>WEB DEVELOPER</p>
 			<div class="banner-button">	
 				<ul>
 					<li><a href="#">Hire Me</a></li>
@@ -50,10 +50,10 @@
 		<span class="section"></span>
 		<div class="aboutme-box">
 			<div class="aboutme-text">
-				<h2>VIDENTUR PARUM</h2>
-				<h3>GRAPHIC DESIGNER,UI/UX EXPERT</h3>
-				<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL UT ALIQUIP EX EA COMMODO CONSEQUAT. DUIS AUTEM VEL EUM IRIURE DOLOR IN HENDRERIT IN VULPUTATE VELIT ESSE MOLESTIE CONSEQUAT, VEL ILLUM DOLORE EU FEUGIAT NULLA FAM.</p>
-				<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. SUSPENDISSE SIT AMET PURUS IPSUM. IN ANTE LEO, ELEMENTUM AT PLACERAT IN, ALIQUET NON LECTUS. NAM IMPERDIET MAGNA EU FAUCIBUS CURSUS.</p>
+				<h2>1995年出生于油城大庆</h2><br/>
+				<h3>现就读于哈尔滨理工大学 信息管理与信息管理专业</h3>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在班级担任团支书职务，主要协调老师和同学之间的事宜，人缘非常好，喜欢组织班级同学进行一些集体活动；学习成绩也还可以，能在班级排到前五名，并多次获得校奖学金和三好学生。</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014年开始进行前端开发，深爱前端这个行业，个人认为前端是一个新兴的行业，不像后台那么枯燥，与用户的界面直接打交道，也富有挑战性。学习前端相关技术主要是通过观看网上教学视频和看一些前端开发人员的网站进行学习，做一些例子，不会的时候找手册，或者看一些大牛的博客，培养自己的自学能力，更快的接触新鲜事物。</p>
 			</div>
 			<div class="aboutme-pic">
 				<a href="#">
@@ -63,38 +63,38 @@
 		</div>
 	</div>
 	<div id="service">
-		<h1>MY SERVICES</h1>
+		<h1>MY SKILLS</h1>
 		<span class="section"></span>
 		<div class="container">
 			<div class="service1 servicex">
 				<span></span>
-				<h3>PRODUCT DESIGN</h3>
-				<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM</p>
+				<h3>HTML</h3>
+				<p>精通HTML语法，能够独立编写HTML语句，了解HTML的语义化和W3C标准，对HTML5的语句也有了解，例如本地存储、canvas等。</p>
 			</div>
 			<div class="service2 servicex">
 				<span></span>
-				<h3>PRODUCT DESIGN</h3>
-				<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM</p>
+				<h3>CSS</h3>
+				<p>精通CSS，对CSS选择器和CSS3的新选择器能够熟练使用，了解CSS优化问题和兼容性问题，如CSS sprite等；对弹性盒模型和CSS3动画等也都有使用。</p>
 			</div>
 			<div class="service3 servicex">
 				<span></span>
-				<h3>PRODUCT DESIGN</h3>
-				<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM</p>
+				<h3>JAVASCRIPT</h3>
+				<p>精通JavaScript，了解ECMA标准，能够用原生的JS完成一些特效的制作，实现网页的交互；并且能够熟练运用jQuery，熟练使用其选择器和其它语句，完成页面的开发。</p>
 			</div>
 			<div class="service4 servicex">
 				<span></span>
-				<h3>PRODUCT DESIGN</h3>
-				<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM</p>
+				<h3>AJAX</h3>
+				<p>了解Ajax的基本原理,能够运用Ajax技术进行异步的前后台交互,并具有实际项目经验，例如本站的博客页面的评论实现了Ajax与后台交互。</p>
 			</div>
 			<div class="service5 servicex">
 				<span></span>
-				<h3>PRODUCT DESIGN</h3>
-				<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM</p>
+				<h3>PHP</h3>
+				<p>熟悉PHP和Mysql的基本语法,能用原生的PHP完成简单的后台开发，熟悉MVC模式,能在XAMPP环境下运用CI框架完成完整的网页后台开发。</p>
 			</div>
 			<div class="service6 servicex">
 				<span></span>
-				<h3>PRODUCT DESIGN</h3>
-				<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM</p>
+				<h3>GITHUB</h3>
+				<p>能够运用Github进行整体项目的团队开发；Github地址：<br/>https://github.com/lock1995</p>
 			</div>
 		</div>
 	</div>
@@ -297,28 +297,28 @@
 		<div class="project-box">	
 			<div class="cycle"><span></span></div>
 			<div class="project1">
-				<p>79</p>
-				<p>PROJECTS</p>
+				<p>75%</p>
+				<p>前端</p>
 			</div>
 			<div class="project2">
-				<p>25</p>
-				<p>CLIENTS</p>
+				<p>50%</p>
+				<p>PHP</p>
 			</div>
 			<div class="project3">
 				<p>100%</p>
-				<p>SATISFACTION</p>
+				<p>心态</p>
 			</div>
 		</div>
 	</div>
 	<div id="contact">
 		<p>
-			WANT TO DISCUSS ANY CREATIVE PROJCT ? 
+			Realize me more ? 
 			<a href="<?php echo 'welcome/contact'; ?>" class="catch">Contact Me</a>
 		</p>
 	</div>
 	<div id="footer">
 		<div class="container">
-			<div class="footer-left">Template by W3layouts</div>
+			<div class="footer-left">Temporary by Lock</div>
 			<div class="footer-right">
 				<ul>
 					<li><a href="#"><span class="face"></span></a></li>

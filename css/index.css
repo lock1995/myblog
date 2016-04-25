@@ -345,11 +345,13 @@
     font-size: 0.85em;
     margin: 0.4em 0 0.5em;
 }
-#blog .col p{
+#blog .col .content{
     color: #595959;
     font-weight: 400;
     line-height: 1.5em;
     margin-top: 1em;
+    max-height: 100px;
+    overflow: hidden;
 }
 #blog .col .button{
 	background: #64c9db;
@@ -405,19 +407,19 @@
 #project .project1{
 	position: absolute;
 	top: -26%;
-	left: 45%;
+	left: 48%;
 	text-align: center;
 }
 #project .project2{
 	position: absolute;
 	top: 70%;
-	left: 30%;
+	left: 33%;
 	text-align: center;
 }
 #project .project3{
 	position: absolute;
 	top: 70%;
-	left: 60%;
+	left: 61%;
 	text-align: center;
 }
 /********** project end **********/
